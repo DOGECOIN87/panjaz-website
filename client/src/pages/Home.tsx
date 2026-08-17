@@ -14,6 +14,33 @@ const foodAssets = {
 
 const directionsUrl = "https://maps.app.goo.gl/3sBfhZ1GW22NsAYm8";
 
+const menuBoards = [
+  {
+    number: "01",
+    eyebrow: "Start here",
+    title: "Pick your rice",
+    copy: "Choose the foundation of your plate: coconut rice and guandules, arroz con pollo, or white rice.",
+    image: "/manus-storage/panjaz-menu-rice-1920_4346befa.webp",
+    alt: "Panjaz build your plate menu board for choosing rice",
+  },
+  {
+    number: "02",
+    eyebrow: "Make it yours",
+    title: "Pick your protein",
+    copy: "Choose one, or mix your favorites—bistec encebollado, ceviche de corvina, and empanadas de res.",
+    image: "/manus-storage/panjaz-menu-proteins-1920_ebb9fb6f.webp",
+    alt: "Panjaz build your plate menu board for choosing proteins",
+  },
+  {
+    number: "03",
+    eyebrow: "Finish strong",
+    title: "Pick your sides",
+    copy: "Round out your plate with plátano maduro, carimanola, or golden empanadas.",
+    image: "/manus-storage/panjaz-menu-sides-1920_a0b07ca5.webp",
+    alt: "Panjaz build your plate menu board for choosing sides",
+  },
+];
+
 const plateSteps = [
   {
     number: "01",
@@ -43,7 +70,7 @@ export default function Home() {
           <img src={foodAssets.logo} alt="Panjaz Panamanian Cuisine" />
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#plate">Build a plate</a>
+          <a href="#menu">Menus</a>
           <a href="#story">Our table</a>
           <a href="#visit">Visit</a>
         </nav>
@@ -61,7 +88,7 @@ export default function Home() {
               Panjaz brings generous Panamanian plates, bright island flavors, and a table-worth-sharing spirit to every order.
             </p>
             <div className="hero-actions">
-              <a className="button-primary" href="#plate">Build your plate <ArrowDownRight size={18} /></a>
+              <a className="button-primary" href="#menu">View the menus <ArrowDownRight size={18} /></a>
               <a className="button-text" href="#story">Meet Panjaz <ArrowDownRight size={17} /></a>
             </div>
           </div>
@@ -103,6 +130,36 @@ export default function Home() {
                 <h3>{step.title}</h3>
                 <p>{step.copy}</p>
                 <span className="step-rule" />
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="menu-gallery" id="menu" aria-labelledby="menu-gallery-title">
+          <div className="menu-gallery-intro reveal-up">
+            <div>
+              <p className="eyebrow gold"><span /> See the full board</p>
+              <h2 id="menu-gallery-title">Three screens.<br /><em>One generous plate.</em></h2>
+            </div>
+            <p>
+              Follow the Panjaz build-your-plate rhythm from rice to protein to sides. Open any board for a closer look.
+            </p>
+          </div>
+          <div className="menu-board-list">
+            {menuBoards.map((board, index) => (
+              <article className={`menu-board reveal-up delay-${Math.min(index + 1, 3)}`} key={board.number}>
+                <div className="menu-board-meta">
+                  <span className="menu-index">{board.number}</span>
+                  <p className="eyebrow"><span /> {board.eyebrow}</p>
+                  <h3>{board.title}</h3>
+                  <p>{board.copy}</p>
+                  <a href={board.image} target="_blank" rel="noreferrer" className="menu-full-link">
+                    View full menu <ArrowUpRight size={17} />
+                  </a>
+                </div>
+                <a href={board.image} target="_blank" rel="noreferrer" className="menu-board-image" aria-label={`Open ${board.title} menu board`}>
+                  <img src={board.image} alt={board.alt} loading="lazy" />
+                </a>
               </article>
             ))}
           </div>
