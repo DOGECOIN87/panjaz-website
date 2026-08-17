@@ -10,6 +10,7 @@ const foodAssets = {
   bistec: "/manus-storage/panjaz-bistec-encebollado_d5cb2914.jpg",
   empanadas: "/manus-storage/panjaz-empanadas-de-res_4641003e.jpg",
   logo: "/manus-storage/panjaz-logo_f3ff55ad.png",
+  restaurantInterior: "/manus-storage/panjaz-restaurant-interior-hero_1c0e5897.jpg",
 };
 
 const directionsUrl = "https://maps.app.goo.gl/3sBfhZ1GW22NsAYm8";
@@ -80,7 +81,11 @@ export default function Home() {
       </header>
 
       <main id="top">
-        <section className="hero-section">
+        <section className="hero-section hero-section-interior">
+          <div className="hero-interior-media" aria-hidden="true">
+            <img src={foodAssets.restaurantInterior} alt="" />
+            <div className="hero-interior-wash" />
+          </div>
           <div className="hero-copy reveal-up">
             <p className="eyebrow"><span /> Panamanian cuisine in San Antonio</p>
             <h1>Pull up hungry.<br /><em>Leave with a story.</em></h1>
@@ -92,18 +97,9 @@ export default function Home() {
               <a className="button-text" href="#story">Meet Panjaz <ArrowDownRight size={17} /></a>
             </div>
           </div>
-
-          <div className="hero-visual reveal-up delay-1">
-            <div className="hero-frame">
-              <img src={foodAssets.arroz} alt="Panjaz arroz con pollo" />
-              <div className="hero-frame-wash" />
-            </div>
-            <div className="hero-stamp">
-              <Sparkles size={17} />
-              <span>Bold flavor<br />on every plate</span>
-            </div>
-            <div className="hero-gateway-label">The Panjaz plate</div>
-            <div className="hero-note">A Panamanian table,<br />served with pride.</div>
+          <div className="hero-context reveal-up delay-1">
+            <span><Sparkles size={15} /> Panjaz, now serving</span>
+            <p>Panamanian flavor<br />made right here.</p>
           </div>
         </section>
 
