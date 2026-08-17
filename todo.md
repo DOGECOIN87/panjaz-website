@@ -22,6 +22,14 @@
 - [x] Verify the hero image on desktop and mobile layouts.
 - [ ] Save and push the completed update to the Panjaz GitHub repository.
 
+## GitHub Pages Domain Launch
+
+- [ ] Build the static production site into the repository’s `/docs` folder for branch-based GitHub Pages deployment.
+- [ ] Push the `/docs` publishing folder and the `panjaz.store` custom-domain file to the Panjaz repository.
+- [ ] Enable GitHub Pages from the `main` branch `/docs` folder.
+- [ ] Assign panjaz.store as the repository’s GitHub Pages custom domain.
+- [ ] Verify the Pages build, DNS resolution, and HTTPS status.
+
 ## Public Menu Retrieval
 
 - [x] Review the supplied Google search result and authoritative linked menu sources.
