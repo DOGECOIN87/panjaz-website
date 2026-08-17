@@ -30,6 +30,11 @@
 - [ ] Assign panjaz.store as the repository’s GitHub Pages custom domain.
 - [ ] Verify the Pages build, DNS resolution, and HTTPS status.
 
+## Repository Image Asset
+
+- [ ] Add the supplied restaurant interior hero image as a tracked source asset in the Panjaz GitHub repository.
+- [ ] Push and verify the image asset on the main branch.
+
 ## Public Menu Retrieval
 
 - [x] Review the supplied Google search result and authoritative linked menu sources.
