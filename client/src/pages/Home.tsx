@@ -6,11 +6,11 @@
 import { ArrowDownRight, ArrowUpRight, ChevronDown, MapPin, Sparkles, UtensilsCrossed } from "lucide-react";
 
 const foodAssets = {
-  arroz: "/manus-storage/panjaz-arroz-con-pollo_1d8a4786.jpg",
-  bistec: "/manus-storage/panjaz-bistec-encebollado_d5cb2914.jpg",
-  empanadas: "/manus-storage/panjaz-empanadas-de-res_4641003e.jpg",
-  logo: "/manus-storage/panjaz-logo_f3ff55ad.png",
-  restaurantInterior: "/manus-storage/panjaz-restaurant-interior-hero_1c0e5897.jpg",
+  arroz: "/assets/panjaz-arroz-con-pollo.jpg",
+  bistec: "/assets/panjaz-bistec-encebollado.jpg",
+  empanadas: "/assets/panjaz-empanadas-de-res.jpg",
+  logo: "/assets/panjaz-logo.webp",
+  restaurantInterior: "/assets/panjaz-restaurant-interior-hero.jpg",
 };
 
 const directionsUrl = "https://maps.app.goo.gl/3sBfhZ1GW22NsAYm8";
@@ -21,7 +21,7 @@ const menuBoards = [
     eyebrow: "Start here",
     title: "Pick your rice",
     copy: "Choose the foundation of your plate: coconut rice and guandules, arroz con pollo, or white rice.",
-    image: "/manus-storage/panjaz-menu-rice-1920_4346befa.webp",
+    image: "/assets/panjaz-menu-rice.webp",
     alt: "Panjaz build your plate menu board for choosing rice",
   },
   {
@@ -29,7 +29,7 @@ const menuBoards = [
     eyebrow: "Make it yours",
     title: "Pick your protein",
     copy: "Choose one, or mix your favorites—bistec encebollado, ceviche de corvina, and empanadas de res.",
-    image: "/manus-storage/panjaz-menu-proteins-1920_ebb9fb6f.webp",
+    image: "/assets/panjaz-menu-proteins.webp",
     alt: "Panjaz build your plate menu board for choosing proteins",
   },
   {
@@ -37,7 +37,7 @@ const menuBoards = [
     eyebrow: "Finish strong",
     title: "Pick your sides",
     copy: "Round out your plate with plátano maduro, carimanola, or golden empanadas.",
-    image: "/manus-storage/panjaz-menu-sides-1920_a0b07ca5.webp",
+    image: "/assets/panjaz-menu-sides.webp",
     alt: "Panjaz build your plate menu board for choosing sides",
   },
 ];

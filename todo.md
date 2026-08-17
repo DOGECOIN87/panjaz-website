@@ -35,6 +35,13 @@
 - [ ] Add the supplied restaurant interior hero image as a tracked source asset in the Panjaz GitHub repository.
 - [ ] Push and verify the image asset on the main branch.
 
+## GitHub Pages Image Assets
+
+- [x] Copy the Panjaz logo, restaurant hero image, food photos, and three menu boards into the GitHub Pages publishing assets.
+- [x] Replace managed-storage image URLs in the static site build with repository-hosted image paths.
+- [x] Rebuild the `/docs` site output and verify all local image references.
+- [ ] Push the static images and rebuilt pages output to the main branch.
+
 ## Public Menu Retrieval
 
 - [x] Review the supplied Google search result and authoritative linked menu sources.
