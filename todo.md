@@ -22,6 +22,14 @@
 - [x] Verify the hero image on desktop and mobile layouts.
 - [ ] Save and push the completed update to the Panjaz GitHub repository.
 
+## GitHub Pages Domain Launch
+
+- [ ] Add a GitHub Pages Actions workflow and custom-domain file for panjaz.store.
+- [ ] Push the GitHub Pages configuration to the Panjaz repository.
+- [ ] Enable GitHub Pages with the workflow deployment source.
+- [ ] Assign panjaz.store as the repository’s GitHub Pages custom domain.
+- [ ] Verify the Pages build, DNS resolution, and HTTPS status.
+
 ## Public Menu Retrieval
 
 - [x] Review the supplied Google search result and authoritative linked menu sources.
